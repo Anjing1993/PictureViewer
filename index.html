@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图片查看器</title>
+</head>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/base.css"/>
+<script src="js/script.js"></script>
+<script src="js/mymove-pro.js"></script>
+<body style="overflow-y: hidden;overflow-x: hidden;">
+    <header><span>图片查看器</span></header>
+    <section>
+        <div id="picArea">
+            <img id="img" src="images/img/0.jpg" style="width: 320px;height: 410px"/>
+        </div>
+        <div id="opPic">
+            <div id="toolName">
+                <div class="active" ><span>放大</span></div>
+                <div class="one" ><span>缩小</span></div>
+                <div class="one"><span>上一张</span></div>
+                <div class="one"><span>下一张</span></div>
+                <div class="one"><span>重置</span></div>
+            </div>
+            <ul id="toolPic">
+                <li id="toUp"><img src="images/+.png"/></li>
+                <li id="toShrink"><img src="images/-.png"/></li>
+                <li id="toNext"><img src="images/左.png"/></li>
+                <li id="toPre"><img src="images/右.png"/></li>
+                <li id="refresh"><img src="images/刷新.png"/></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

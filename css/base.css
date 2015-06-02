@@ -1,0 +1,16 @@
+body,header,section,div,ul,li{padding:0;margin:0;}
+body{background:#E2E2E2;font-family: "Microsoft Yahei"}
+ul li{list-style: none;}
+header,section{display:block}
+header{width: 100%;height:40px;background:pink;}
+header span{color:white;display: block;width:200px;text-align: center;height:40px;line-height:40px;margin:0 auto;}
+#picArea{position: relative;top:45px;text-align:center;}
+#picArea img{position:relative;z-index:0;}
+#opPic{width:420px;margin:0 auto ;border-radius:5px;position: absolute; left: 0; top: 530px; right: 0; bottom: 0;z-index:2;background: #ABA7A4;height:70px;}
+#opPic #toolName .active,#opPic #toolName .one{border-top-left-radius:5px;border-top-right-radius:5px;height:25px;width:100%;position:absolute;z-index:2;background:black;}
+#opPic #toolName .one{display:none;}
+#opPic #toolName span{display: block;font-size: 12px;color:white;width:120px;margin:0 auto;text-align: center;height:25px;line-height:25px;}
+#opPic #toolPic{width:280px;margin:0 auto;position:relative;top:25px;}
+#opPic #toolPic li{cursor:pointer;display: inline;}
+
+#opPic #toolPic li img{text-align:center;width:35px;height:35px;padding:7px;}
