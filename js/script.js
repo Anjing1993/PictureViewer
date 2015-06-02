@@ -26,17 +26,18 @@ window.onload=function() {
 
 
     //switch picture operate
-
+    //1
     Up.onclick = function () {
 
         startMove(oImg, {width: parseInt(oImg.offsetWidth + oImg.offsetWidth * 0.15), height: parseInt(oImg.offsetHeight + oImg.offsetHeight * 0.15)})
 
     }
+    //2
     oShrink.onclick = function () {
         startMove(oImg, {width: parseInt(oImg.offsetWidth - oImg.offsetWidth * 0.15), height: parseInt(oImg.offsetHeight - oImg.offsetHeight * 0.15)})
 
     }
-    //scroll
+    //3.scroll
     var scrollChange = function (e) {
 
         e = e || window.event;
@@ -67,7 +68,7 @@ window.onload=function() {
     //滚动滑轮触发scrollChange方法  //符合IE，谷歌
     window.onmousewheel = document.onmousewheel = scrollChange;
 
-    //drag
+    //4.drag
     //1.按下鼠标点击图片，获取鼠标点击坐标与图片左边框与上边框之间的固定距离设为disX，disY
     oImg.onmousedown = function (e) {
 
@@ -96,15 +97,18 @@ window.onload=function() {
         return false;//解决默认事件问题，在火狐3.6版本以上，第二次拖动空div会出现bug，拖不动
     }
 
-
+    //5
     oToLeft.onclick = function () {
         operate(this);
     }
-
+    //6
     oToRight.onclick = function () {
         operate(this);
     }
-
+    //7.re
+    oRefresh.onclick = function resetImage() {
+        location.reload(false);//刷新页面以使图片回到初始化状态，location.reload()设为false表示如果文档未改变，将从缓存中装载文档
+    }
 
     function operate(name) {
 
